@@ -7,7 +7,7 @@ const Info = ({country}) => {
 
     // [START API CALL] Weatherstack
     const hook= () => {
-        const api_key = process.env.REACT_APP_WEATHER_API_KEY
+        const api_key = process.env.REACT_APP_API_KEY
         console.log('API_KEY: ', api_key)
 
         // Set up axios call 
@@ -28,6 +28,7 @@ const Info = ({country}) => {
     } 
     useEffect(hook,[])
     // [END API CALL] Weatherstack
+
 
     
     return (
